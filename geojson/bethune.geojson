@@ -1,0 +1,132 @@
+{
+"type": "FeatureCollection",
+                                                                                
+"features": [
+{
+	"type" : "Feature",
+	"properties" : {
+		"WKT" : "LINESTRING (-102.427044754319567 39.302519750904075,-102.426808760109097 39.302337755705402,-102.426602752872142 39.30226874844513,-102.424659759713805 39.30218075628251,-102.421273750954128 39.30211574885638,-102.420979751808943 39.302345756305961)",
+		"ID" : "205561",
+		"LENGTH" : "0.33806",
+		"FRAID" : "205561",
+		"NET" : "X",
+		"RROWNER1" : "KYLE",
+		"RROWNER2" : "",
+		"RROWNER3" : "",
+		"TR1" : "",
+		"TR2" : "",
+		"TR3" : "",
+		"TR4" : "",
+		"TR5" : "",
+		"TR6" : "",
+		"TR7" : "",
+		"TR8" : "",
+		"TR9" : "",
+		"SUBSIDRR" : "",
+		"PREVRR1" : "",
+		"PREVRR2" : "CRIP",
+		"ABANDONED" : "",
+		"PASS" : "",
+		"MILITARY" : "",
+		"STATE" : "CO",
+		"FIPS5" : "08063",
+		"FRA_REG" : "06",
+		"RR_CLASS" : "3",
+		"Feature" : "",
+		"VERSION" : "4",
+		"REVISION" : "",
+		"FIPS" : "08",
+		"UpdateBy" : "",
+		"UpdateDate" : "",
+		"Status" : "IN SERVICE",
+		"DIVISION" : "",
+		"SUBDIVISIO" : "",
+		"BRANCH" : "MAIN"
+	},
+	"geometry" : {
+		"type" : "LineString",
+		"coordinates" : [
+			[
+				-102.42704475431957,
+				39.302519750904075
+			],
+			[
+				-102.4268087601091,
+				39.3023377557054
+			],
+			[
+				-102.42660275287214,
+				39.30226874844513
+			],
+			[
+				-102.4246597597138,
+				39.30218075628251
+			],
+			[
+				-102.42127375095413,
+				39.30211574885638
+			],
+			[
+				-102.42097975180894,
+				39.30234575630596
+			]
+		]
+	}
+}
+,
+{
+	"type" : "Feature",
+	"properties" : {
+		"WKT" : "LINESTRING (-102.427044754319567 39.302519750904075,-102.420979751808943 39.302345756305961)",
+		"ID" : "205560",
+		"LENGTH" : "0.32529",
+		"FRAID" : "205560",
+		"NET" : "F",
+		"RROWNER1" : "KYLE",
+		"RROWNER2" : "",
+		"RROWNER3" : "",
+		"TR1" : "",
+		"TR2" : "",
+		"TR3" : "",
+		"TR4" : "",
+		"TR5" : "",
+		"TR6" : "",
+		"TR7" : "UP",
+		"TR8" : "",
+		"TR9" : "",
+		"SUBSIDRR" : "",
+		"PREVRR1" : "",
+		"PREVRR2" : "CRIP",
+		"ABANDONED" : "",
+		"PASS" : "",
+		"MILITARY" : "",
+		"STATE" : "CO",
+		"FIPS5" : "08063",
+		"FRA_REG" : "06",
+		"RR_CLASS" : "3",
+		"Feature" : "C Ri and P Feature",
+		"VERSION" : "4",
+		"REVISION" : "",
+		"FIPS" : "08",
+		"UpdateBy" : "",
+		"UpdateDate" : "",
+		"Status" : "IN SERVICE",
+		"DIVISION" : "",
+		"SUBDIVISIO" : "",
+		"BRANCH" : "MAIN"
+	},
+	"geometry" : {
+		"type" : "LineString",
+		"coordinates" : [
+			[
+				-102.42704475431957,
+				39.302519750904075
+			],
+			[
+				-102.42097975180894,
+				39.30234575630596
+			]
+		]
+	}
+}
+]}
