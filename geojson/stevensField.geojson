@@ -2,6 +2,8 @@
 "type": "FeatureCollection",
                                                                                 
 "features": [
+{ "type": "Airport", "properties": { "WKT": "POINT (-107.055870003997498 37.277499999018417)", "OBJECTID": "4", "NAME": "Stevens Field", "LOC_ID": "2V1", "ELEV": "4659", "FUNC_LEVEL": "Major", "ASSOCCITY": "Pagosa Springs", "FIPSCITY": "56860", "COUNTY": "Archuleta", "FIPSCOUNTY": "007", "REGION": "5", "TPRID": "10", "ISNHS": "Y", "NEARCITY": "PagosaSprings", "NEARHWY": "US160", "AIRPORTTYP": "GA", "AIRCRAFTOP": "46\/day", "AIRPORTHOU": "Attended  Apr-Oct ALL 0730-1800, Nov-Mar ALL 0800-1800", "ANNUALOPS": "16850", "ANNUALPASS": "0", "RUNWAYS": "1", "RUNWAYLENG": "8100'", "RUNWAYSURF": "Asphalt", "LIGHTING": "MIRL", "NAVIGATION": "CTAF, UNI, FSS, AWOS", "NEARRECREA": "WolfCrkSki,ChimneyRockArchSite,fish,hunt,hike,bike,backpacking", "COMMENTS": "Ballooning,Soaring, manager:Rob Russ", "X_COORD": "317733.16036", "Y_COORD": "4127638.1291", "LAT": "37.2775", "LONG": "-107.05587", "GEOMETRY_X": "-107.055870004", "GEOMETRY_Y": "37.277499999" }, "geometry": { "type": "Point", "coordinates": [ -107.055870003997498, 37.277499999018417 ] } },
+
 {
 	"type" : "Feature",
 	"properties" : {
