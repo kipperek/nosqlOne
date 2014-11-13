@@ -31,7 +31,8 @@ Baza Danych:
 Wykorzystanie systemu podczas importu:
 ![Importowanie mongo](images/mongoimport.png)
 
-Czas importu danych
+Czas importu danych:
+
 ![Importowanie mongo](images/mongoimport-time.png)
 
 ### Import danych do PostgreSQL
@@ -39,5 +40,5 @@ Czas importu danych
 Wykorzystanie systemu podczas importu:
 ![Importowanie mongo](images/psqlimport.png)
 
-Czas importu danych
+Czas importu danych:
 ![Importowanie mongo](images/psqlimport-time.png)
