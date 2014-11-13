@@ -26,7 +26,18 @@ Baza Danych:
 
 ## Zadanie 1a
 
-#Import danych do Mongo:
+### Import danych do MongoDB:
 
 Wykorzystanie systemu podczas importu:
 ![Importowanie mongo](images/mongoimport.png)
+
+Czas importu danych
+![Importowanie mongo](images/mongoimport-time.png)
+
+### Import danych do PostgreSQL
+
+Wykorzystanie systemu podczas importu:
+![Importowanie mongo](images/psqlimport.png)
+
+Czas importu danych
+![Importowanie mongo](images/psqlimport-time.png)
