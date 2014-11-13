@@ -89,3 +89,25 @@ Pobrałem dane:
 	- Poligony miast w Colorado USA
 	- Punkty lotniska w Colorado USA
 	- Linie torowisk w Colorado USA
+
+
+#### Zapytanie nr 1
+
+Miasta w Colorado w obrębie 100km od lotniska Stevens Field:
+```javascript
+var stevensField = {"type": "Point", "coordinates": [ -107.055870003997498, 37.277499999018417 ] };
+db.colorado.find({"geometry" : {$near: { $geometry: stevensField, $maxDistance: 100000 }}, "type": "City"});
+```
+Wynik zapytania: [zapytanie1](geojson/stevensField.geojson)
+
+#### Zapytanie nr 2
+
+Linie kolejowe przeprowadzone przez miasto Bethune w Colorado
+```javascript
+var bethune = { "type": "Polygon", "coordinates":[[ [ -102.418688034668037, 39.301254315004115 ], [ -102.428046887127223, 39.301218339629962 ], [ -102.427941487619066, 39.305837656221655 ], [ -102.418290884060283, 39.305907701415613 ], [ -102.418707328423338, 39.302741247640967 ], [ -102.418688034668037, 39.301254315004115 ] ] ] };
+db.colorado.find({"geometry" : {$geoWithin: {$geometry: bethune}}, "type": "Railroad"}, {"_id": 0});
+
+```
+Wynik zapytania: [zapytanie2](geojson/bethune.geojson)
+
+#### Zapytanie nr 3
