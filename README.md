@@ -29,4 +29,4 @@ Baza Danych:
 #Import danych do Mongo:
 
 Wykorzystanie systemu podczas importu:
-![Importowanie mongo](../../images/mongoimport.png)
+![Importowanie mongo](images/mongoimport.png)
