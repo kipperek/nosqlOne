@@ -29,15 +29,63 @@ Baza Danych:
 ### Import danych do MongoDB:
 
 Wykorzystanie systemu podczas importu:
+
 ![Importowanie mongo](images/mongoimport.png)
 
 Czas importu danych:
-![Importowanie mongo](images/mongoimport-time.png)
+
+![Importowanie mongo time](images/mongoimport-time.png)
 
 ### Import danych do PostgreSQL
 
 Wykorzystanie systemu podczas importu:
-![Importowanie mongo](images/psqlimport.png)
+
+![Importowanie psql](images/psqlimport.png)
 
 Czas importu danych:
-![Importowanie mongo](images/psqlimport-time.png)
+
+![Importowanie psql time](images/psqlimport-time.png)
+
+## Zadanie 1b
+
+# Zliczanie danych w MongoDB
+
+Funkcja zliczająca w MongoDB wyświetla wynik niemal natychmiastowo, a baza zawierająca dane waży ok 16GB
+
+![Mongo count](images/mongo-count.png)
+
+# Zliczanie danych w PostgreSQL
+
+W psql zliczanie danych jest nieco bardziej czasochłonne:
+
+![Psql count](images/psql-count.png)
+
+## Zadanie 1c
+
+Program wykorzystany w tym zadaniu napisałem w javascript oraz uruchomiłem go za pomocą node.js. Sterownik jaki wykorzystałem to node-mongodb-nativ. Skrypt znajduje się tu: [skrypt](/scripts/index.js)
+
+Wykorzystanie zasobów podczas działania programu: 
+
+![Node zasoby](images/node-zasoby.png)
+
+Wynik działania programu:
+
+![Node wynik](images/node-wynik.png)
+
+Oprócz zliczenia tagów, wynikiem programu jest zamiana ciągu znaków w polu 'Tags' na tablice z tagami w bazie MongoDB:
+
+	Tags: "c# javascript";
+
+	na
+
+	Tags: ["c#", "javascript"];
+
+## Zadanie 1d
+
+Dane wykorzystane w zadaniu zostały pobrane z [koordinates.com](http://koordinates.com)
+
+Pobrałem dane:
+	
+	- Poligony miast w Colorado USA
+	- Punkty lotniska w Colorado USA
+	- Linie torowisk w Colorado USA
