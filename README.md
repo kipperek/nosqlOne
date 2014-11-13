@@ -26,7 +26,7 @@ Baza Danych:
 
 ## Zadanie 1a
 
-Import danych do Mongo:
+#Import danych do Mongo:
 
-	Wykorzystanie systemu podczas importu:
-	!["Importowanie mongo"](../../images/mongoimport.png)
+Wykorzystanie systemu podczas importu:
+![Importowanie mongo](../../images/mongoimport.png)
