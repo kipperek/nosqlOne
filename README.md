@@ -48,13 +48,13 @@ Czas importu danych:
 
 ## Zadanie 1b
 
-# Zliczanie danych w MongoDB
+### Zliczanie danych w MongoDB
 
 Funkcja zliczająca w MongoDB wyświetla wynik niemal natychmiastowo, a baza zawierająca dane waży ok 16GB
 
 ![Mongo count](images/mongo-count.png)
 
-# Zliczanie danych w PostgreSQL
+### Zliczanie danych w PostgreSQL
 
 W psql zliczanie danych jest nieco bardziej czasochłonne:
 
@@ -73,13 +73,13 @@ Wynik działania programu:
 ![Node wynik](images/node-wynik.png)
 
 Oprócz zliczenia tagów, wynikiem programu jest zamiana ciągu znaków w polu 'Tags' na tablice z tagami w bazie MongoDB:
+```javascript
+{ Tags: "c# javascript" };
 
-	Tags: "c# javascript";
+//na
 
-	na
-
-	Tags: ["c#", "javascript"];
-
+{ Tags: ["c#", "javascript"] };
+```
 ## Zadanie 1d
 
 Dane wykorzystane w zadaniu zostały pobrane z [koordinates.com](http://koordinates.com)
@@ -111,3 +111,34 @@ db.colorado.find({"geometry" : {$geoWithin: {$geometry: bethune}}, "type": "Rail
 Wynik zapytania: [zapytanie2](geojson/bethune.geojson)
 
 #### Zapytanie nr 3
+
+Miasta przez które przejeżdza linia kolejowa D and R G Western Railroad
+```javascript
+var westernRailroad = { "type": "LineString", "coordinates": [ [ -104.857137759074348, 39.371631748015531 ], [ -104.857594758539094, 39.372285751524416 ], [ -104.857614758053813, 39.372424749167649 ], [ -104.857774756845799, 39.373496749277663 ], [ -104.857821764243084, 39.373811751231258 ], [ -104.857516761835285, 39.374486753522895 ] ] };
+db.colorado.find({"geometry" : {$geoIntersects: {$geometry: westernRailroad}}, "type": "City"}, {"_id": 0})
+```
+Wynik zapytania: [zapytanie3](geojson/western.geojson)
+
+#### Zapytanie nr 4
+
+Torowiska na trasie samolotu ze Stevens Field do Telluride Regional Airport
+```javascript
+var airLine = {"type": "LineString", "coordinates": [ [ -107.908480003690741, 37.953760001039718 ], [ -107.055870003997498, 37.277499999018417 ] ] };
+db.colorado.find({"geometry" : {$geoIntersects: { $geometry: airLine }}, "type": "Railroad"}, {"_id": 0});
+```
+Wynik zapytania: [zapytanie4](geojson/airline.geojson)
+
+#### Zapytanie nr 5
+
+Miasta i lotniska między Las Animas City and County Airport, Stevens Field oraz Telluride Regional Airport
+```javascript
+var airs = {"type": "Polygon", "coordinates": [ [ [ -107.908480003690741, 37.953760001039718 ], [ -107.055870003997498, 37.277499999018417 ], [ -103.23714999578533, 38.052780003818988 ], [ -107.908480003690741, 37.953760001039718 ] ] ] };
+db.colorado.find({"geometry" : {$geoWithin: {$geometry: airs}}, "type": /City|Airport/ }, {"_id": 0});
+```
+Wynik zapytania: [zapytanie5](geojson/cityandairport.geojson)
+
+#### Zapytanie nr 6
+
+```javascript
+```
+Wynik zapytania: [zapytanie6](geojson/bethune.geojson)
