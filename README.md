@@ -29,4 +29,4 @@ Baza Danych:
 Import danych do Mongo:
 
 	Wykorzystanie systemu podczas importu:
-	![alt text](/images/mongoimport.png "Importowanie do mongo")
+	!["Importowanie mongo"](../../images/mongoimport.png)
