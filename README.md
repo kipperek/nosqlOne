@@ -139,9 +139,18 @@ Wynik zapytania: [zapytanie5](geojson/cityandairport.geojson)
 
 #### Zapytanie nr 6
 
-Linie kolejowe w odległości 10km od Lake Country Airport
+Linie kolejowe w odległości minimum 10km od Lake Country Airport
 ```javascript
 var lakeCntryAir = { "type": "Point", "coordinates": [ -106.316689997707329, 39.220270003429214 ] };
-db.colorado.find({"geometry" : {$near: { $geometry: lakeCntryAir, $maxDistance: 10000}}, "type": "Railroad"}, {"_id": 0});
+db.colorado.find({"geometry" : {$near: { $geometry: lakeCntryAir, $minDistance: 10000}}, "type": "Railroad"}, {"_id": 0});
 ```
 Wynik zapytania: [zapytanie6](geojson/lakecntry.geojson)
+
+#### Zapytanie nr 7
+
+Lotniska w promieniu 10 jednostek od lotniska Kit Carson County Airport
+```javascript
+db.colorado.find({"geometry" : { $geoWithin: { $center: [[ -102.285390004028798, 39.242499999373614 ],10]} }, "type": "Airport" });
+```
+
+Wynik zapytania: [zapytanie7](geojson/kitCarson.geojson)
