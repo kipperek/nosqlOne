@@ -3,7 +3,6 @@
                                                                                 
 "features": [
 {
-	"_id" : ObjectId("5463c9f1b0940f421dfc0ed3"),
 	"type" : "Feature",
 	"properties" : {
 		"WKT" : "POINT (-102.618809994921975 37.463069997398584)",
@@ -50,7 +49,6 @@
 }
 ,
 {
-	"_id" : ObjectId("5463c9f1b0940f421dfc0ed4"),
 	"type" : "Feature",
 	"properties" : {
 		"WKT" : "POINT (-103.23714999578533 38.052780003818988)",
@@ -97,7 +95,6 @@
 }
 ,
 {
-	"_id" : ObjectId("5463c9f1b0940f421dfc0ef0"),
 	"type" : "Feature",
 	"properties" : {
 		"WKT" : "POINT (-102.808810001947222 38.475009998863804)",
@@ -144,7 +141,6 @@
 }
 ,
 {
-	"_id" : ObjectId("5463c9f1b0940f421dfc0ef1"),
 	"type" : "Feature",
 	"properties" : {
 		"WKT" : "POINT (-102.285390004028798 39.242499999373614)",
@@ -191,7 +187,6 @@
 }
 ,
 {
-	"_id" : ObjectId("5463c9f1b0940f421dfc0ef7"),
 	"type" : "Feature",
 	"properties" : {
 		"WKT" : "POINT (-103.666339999447473 39.272770001866569)",
@@ -238,7 +233,6 @@
 }
 ,
 {
-	"_id" : ObjectId("5463c9f1b0940f421dfc0ef8"),
 	"type" : "Feature",
 	"properties" : {
 		"WKT" : "POINT (-103.26481000369057 40.615329996796795)",
@@ -285,7 +279,6 @@
 }
 ,
 {
-	"_id" : ObjectId("5463c9f1b0940f421dfc0f00"),
 	"type" : "Feature",
 	"properties" : {
 		"WKT" : "POINT (-103.581060001460244 40.263869999634728)",
@@ -332,7 +325,6 @@
 }
 ,
 {
-	"_id" : ObjectId("5463c9f1b0940f421dfc0f01"),
 	"type" : "Feature",
 	"properties" : {
 		"WKT" : "POINT (-103.803950005142752 40.334229998170272)",
@@ -379,7 +371,6 @@
 }
 ,
 {
-	"_id" : ObjectId("5463c9f1b0940f421dfc0f02"),
 	"type" : "Feature",
 	"properties" : {
 		"WKT" : "POINT (-102.603250004505782 40.624989999490104)",
@@ -426,7 +417,6 @@
 }
 ,
 {
-	"_id" : ObjectId("5463c9f1b0940f421dfc0f03"),
 	"type" : "Feature",
 	"properties" : {
 		"WKT" : "POINT (-102.272689996357315 40.569429998380727)",
@@ -473,7 +463,6 @@
 }
 ,
 {
-	"_id" : ObjectId("5463c9f1b0940f421dfc0f05"),
 	"type" : "Feature",
 	"properties" : {
 		"WKT" : "POINT (-102.688500001794949 38.0696899966525)",
@@ -520,7 +509,6 @@
 }
 ,
 {
-	"_id" : ObjectId("5463c9f1b0940f421dfc0f06"),
 	"type" : "Feature",
 	"properties" : {
 		"WKT" : "POINT (-102.117129998574768 38.033339995586722)",
@@ -567,7 +555,6 @@
 }
 ,
 {
-	"_id" : ObjectId("5463c9f1b0940f421dfc0f11"),
 	"type" : "Feature",
 	"properties" : {
 		"WKT" : "POINT (-102.712989998494308 40.104149996977327)",
@@ -614,7 +601,6 @@
 }
 ,
 {
-	"_id" : ObjectId("5463c9f1b0940f421dfc0f12"),
 	"type" : "Feature",
 	"properties" : {
 		"WKT" : "POINT (-102.240959998116438 40.100319999435989)",
@@ -661,7 +647,6 @@
 }
 ,
 {
-	"_id" : ObjectId("5463c9f1b0940f421dfc0f13"),
 	"type" : "Feature",
 	"properties" : {
 		"WKT" : "POINT (-103.509430005407893 38.049720001969952)",
@@ -708,7 +693,6 @@
 }
 ,
 {
-	"_id" : ObjectId("5463c9f1b0940f421dfc0f14"),
 	"type" : "Feature",
 	"properties" : {
 		"WKT" : "POINT (-103.093550003490861 40.244430001686659)",
@@ -755,7 +739,6 @@
 }
 ,
 {
-	"_id" : ObjectId("5463c9f1b0940f421dfc0f15"),
 	"type" : "Feature",
 	"properties" : {
 		"WKT" : "POINT (-102.315460004215254 40.970830000116955)",
@@ -802,7 +785,6 @@
 }
 ,
 {
-	"_id" : ObjectId("5463c9f1b0940f421dfc0f16"),
 	"type" : "Feature",
 	"properties" : {
 		"WKT" : "POINT (-103.222030004791861 40.175629998038751)",
@@ -846,5 +828,4 @@
 			40.17562999803875
 		]
 	}
-}
-]}
+}]}
