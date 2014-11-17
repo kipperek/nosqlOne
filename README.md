@@ -148,9 +148,9 @@ Wynik zapytania: [zapytanie6](geojson/lakecntry.geojson)
 
 #### Zapytanie nr 7
 
-Lotniska w promieniu 10 jednostek od lotniska Kit Carson County Airport
+Lotniska w promieniu 5 jednostek od lotniska Kit Carson County Airport
 ```javascript
-db.colorado.find({"geometry" : { $geoWithin: { $center: [[ -102.285390004028798, 39.242499999373614 ],10]} }, "type": "Airport" });
+db.colorado.find({"geometry" : { $geoWithin: { $center: [[ -102.285390004028798, 39.242499999373614 ],5]} }, "type": "Airport" });
 ```
 
 Wynik zapytania: [zapytanie7](geojson/kitCarson.geojson)
