@@ -21,44 +21,89 @@ System operacyjny:
 	Xubuntu 14.04
 
 Baza Danych:
-	MongoDB 2.6.5, Postgres 9.3
+	MongoDB 2.6.5, MongoDB 2.8.0-rc0, Postgres 9.3
 
 
 ## Zadanie 1a
 
 ### Import danych do MongoDB:
 
+#### Mongo 2.6.5
+
+Import i czas:
+
+```sh
+time mongoimport --db nosql --collection train --type csv --headerline --file Train.csv
+...
+
+real    6m40.038s
+user    1m0.003s
+sys     0m6.500s
+```
+
 Wykorzystanie systemu podczas importu:
 
 ![Importowanie mongo](images/mongoimport.png)
 
-Czas importu danych:
+#### Mongo 2.8.0-rc0
 
-![Importowanie mongo time](images/mongoimport-time.png)
+```sh
+time mongoimport --db nosql --collection train --type csv --headerline --file Train.csv
+...
+
+real    8m17.160s
+user    5m13.134s
+sys     0m32.395s
+```
+Wykorzystanie systemu i bazy mongo podczas importu:
+
+![Importowanie mongo](images/mongoimport-rc.png)
 
 ### Import danych do PostgreSQL
+
+Import i czas:
+
+```sh
+time psql -d postgres -c "copy train(Id, Title,Body,Tags) from '/home/Kacper/Train.csv' with delimiter ',' csv header" -U postgres
+COPY 6034195
+
+real    19m36.262s
+user    0m0.019s
+sys     0m0.034s
+```
 
 Wykorzystanie systemu podczas importu:
 
 ![Importowanie psql](images/psqlimport.png)
 
-Czas importu danych:
-
-![Importowanie psql time](images/psqlimport-time.png)
-
 ## Zadanie 1b
 
 ### Zliczanie danych w MongoDB
 
-Funkcja zliczająca w MongoDB wyświetla wynik niemal natychmiastowo, a baza zawierająca dane waży ok 16GB
+Funkcja zliczająca w MongoDB wyświetla wynik niemal natychmiastowo, a baza zawierająca dane waży ok 16GB ( w wersji 2.6.5 i 2.8.0-rc0 wygląda to identycznie )
 
-![Mongo count](images/mongo-count.png)
-
+```sh
+> show dbs
+local 0.078GB
+nosql 15.946GB
+> db.train.count()
+6034195
+```
 ### Zliczanie danych w PostgreSQL
 
 W psql zliczanie danych jest nieco bardziej czasochłonne:
 
-![Psql count](images/psql-count.png)
+```sh
+time psql -c "select count(*) from train" -U postgres
+  count
+----------
+ 6034195
+ (1 row)
+
+real    2m57.268s
+user    0m0.034s
+sys     0m0.015s
+```
 
 ## Zadanie 1c
 
@@ -70,14 +115,21 @@ Wykorzystanie zasobów podczas działania programu:
 
 Wynik działania programu:
 
-![Node wynik](images/node-wynik.png)
+```sh
+time node index.js
+...
+Wszystkie tagi: 17129359
+Tagi unikalne: 42003
+
+real    25m43.432s
+user    20m19.106s
+sys     0m37.353s
+```
 
 Oprócz zliczenia tagów, wynikiem programu jest zamiana ciągu znaków w polu 'Tags' na tablice z tagami w bazie MongoDB:
 ```javascript
 { Tags: "c# javascript" };
-
 //na
-
 { Tags: ["c#", "javascript"] };
 ```
 ## Zadanie 1d
