@@ -109,6 +109,8 @@ sys     0m0.015s
 
 Program wykorzystany w tym zadaniu napisałem w javascript oraz uruchomiłem go za pomocą node.js. Sterownik jaki wykorzystałem to node-mongodb-nativ. Skrypt znajduje się tu: [skrypt](/scripts/index.js)
 
+#### Mongo 2.6.5
+
 Wykorzystanie zasobów podczas działania programu: 
 
 ![Node zasoby](images/node-zasoby.png)
@@ -125,7 +127,24 @@ real    25m43.432s
 user    20m19.106s
 sys     0m37.353s
 ```
+#### Mongo 2.8.0-rc0
 
+Wykorzystanie zasobów podczas działania programu: 
+
+![Node zasoby](images/node-zasoby-rc.png)
+
+Wynik działania programu:
+
+```sh
+time node index.js
+...
+Wszystkie tagi: 17129359
+Tagi unikalne: 42003
+
+real    44m52.455s
+user    20m30.757s
+sys     0m35.070s
+```
 Oprócz zliczenia tagów, wynikiem programu jest zamiana ciągu znaków w polu 'Tags' na tablice z tagami w bazie MongoDB:
 ```javascript
 { Tags: "c# javascript" };
