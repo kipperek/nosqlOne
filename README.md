@@ -151,6 +151,15 @@ Oprócz zliczenia tagów, wynikiem programu jest zamiana ciągu znaków w polu '
 //na
 { Tags: ["c#", "javascript"] };
 ```
+
+#### Psql
+
+Mimo szczerych chęci wykonanie skryptu w node na danych urzytych w tym zadaniu w bazie postgres, było niemożliwe, ponieważ sterownik postgresa próbuje załadować całą tabele do pamięci podręcznej.
+![Node psql](images/node-psql.png)
+
+Skrypt: [pg.js](scripts/pg.js)
+
+
 ## Zadanie 1d
 
 Dane wykorzystane w zadaniu zostały pobrane z [koordinates.com](http://koordinates.com)
